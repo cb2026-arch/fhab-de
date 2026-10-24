@@ -1,0 +1,186 @@
+/* 
+ * Base colors 
+ */
+
+body { background-color:#f3f3f8; color:#494949; }
+
+#idSegmentUpper { background:#6c7aa8; border-color:#465987; }
+#idSegmentLower  {  }
+
+/* 
+  .item-list a.active selects view lists like Recent comments, Active forum topics etc.
+ */
+a, ul.menu li a:visited, ul.links li a:visited, .item-list a.active { color:#5b5faa; }
+a:visited, .item-list a.active:visited { color:#5b5faa; }
+a:hover, ul.menu li a:hover, ul.links li a:hover { color:#252cae; }
+
+h1,h2,h3,h4,h5,h6 { color:#494949; }
+
+/* Header */
+#idSiteName, #idSiteName a { color:#ffffff; }
+
+#idSiteSlogan { color:#ffffff; }
+
+/* Breadcrumb - colors */
+
+.breadcrumb { color:#908fc3;  background-color:transparent; }
+.breadcrumb a { color:#908fc3; }
+.breadcrumb a:hover { color:#252cae; }
+
+/* Primary, secondary links and suckerfish - colors */
+
+#idPrimaryLinks, #idSecondaryLinks {  }
+
+ul.primary-links {  }
+ul.primary-links li a.active, ul.secondary-links li a.active {  }
+
+ul.primary-links li a, ul.primary-links li a:link, ul.primary-links li a:visited { color: #FFFFFF; background:transparent; }
+ul.primary-links li a.active { border-bottom-color:transparent; background:#465987; } /*TODO*/
+ul.primary-links li a:hover { color:#908fc3; }
+
+ul.secondary-links li a, ul.secondary-links li a:link, ul.secondary-links li a:visited, ul.suckerfish-primary li a { color: #8e8f8b; }
+ul.secondary-links li a.active { color:#8e8f8b; border-bottom-color:transparent; background: transparent; }
+ul.secondary-links li a:hover { color:#908fc3; }
+
+ul.suckerfish-primary li:hover a { color:#ffffff; background:#6c7aa8; }
+ul.suckerfish-primary li a:hover { color:#ffffff; background:#465987; }
+ul.suckerfish-primary li ul li:hover a { background:#465987;}
+ul.suckerfish-primary li ul li a:hover { background:#465987;}
+
+div.suckerfish-secondary-wrapper li { background:#465987;}
+#idSuckerfish, ul.suckerfish-primary li div.suckerfish-secondary-wrapper { border-color:#465987; border-top-style:none; }
+
+/* Help - colors */
+
+div.help p {  }
+
+/* Menus - colors */
+
+ul.menu li a {  }
+
+/* Admin panel - colors */
+
+div.admin div.admin-panel h3 { background-color:#f6f6f9; color:#494949;  }
+div.admin div.admin-panel p.description { color:#898989; }
+
+dl.admin-list dt { color:#5b5faa; }
+dl.admin-list dd { color:#898989; }
+
+table#blocks td.region { background:#e3e3f0; }
+
+/* Message - colors */
+.messages { border-color:#c7f2c8; background-color:#ffffff; color:#33aa33; }
+
+/* Mission */
+#mission { border-color:#f0ebf8; background-color:#ffffff; }
+
+/* Forum */
+
+#forum th { color:#494949; }
+
+#forum td.container { background-color:#e3e3f0; }
+
+#forum td.container .name { background-color:#e3e3f0; }
+#forum td.container .name a { color:#454f67; }
+#forum td.container .name a:hover { color:#252cae; }
+#forum td.container .description { background-color:#e3e3f0; border-top:solid 1px #b2b3d1; }
+
+/* Node, Book - colors */
+
+h2, div.node h2, div.node h2 a, h2.with-tabs, h2.with-tabs a { background-color:transparent; color:#494949; }
+div.node h2 a { }
+
+div.node span.submitted { color:#898989; }
+
+div.node div.links, div.book-navigation div.page-links { border-color:#e1e1e2; }
+
+/* Comments - colors */
+
+div.comment { border-bottom-color: #f1f1f2; }
+div.comment div.comment-header span.new { color:#ffae00; }
+div.comment span.submitted { color:#898989; }
+
+div.comment div.comment-footer { border-top-color:#f1f1f2; }
+
+/* Tabs - colors */
+
+#tabs-wrapper .tabs.primary { border-bottom-color:#c5c6e0; }
+
+#tabs-wrapper .tabs.primary li { background-color:#e1e1e2; color:#908fc3; }
+#tabs-wrapper .tabs.primary li.active { color:#ffffff; background-color:#c5c6e0; border-bottom-color:#c5c6e0; }
+
+#tabs-wrapper .tabs li a { background-color:transparent; color:#908fc3; }
+#tabs-wrapper .tabs li a:hover { color:#252cae; background-color:transparent; }
+#tabs-wrapper .tabs li a.active:hover { color:#252cae; }
+#tabs-wrapper .tabs li a.active { background:#c5c6e0; color:#ffffff; }
+
+/* Search box - fonts & colors */
+
+#search-block-form input.form-text { border-color:#494949; background:#ffffff; }
+
+/* Tables - colors */
+
+table { border-top-color:#ffffff; border-bottom-color:#ffffff; }
+table thead tr th { border-bottom-color:#e2e3f1; background:#ffffff; }
+table tbody tr td { border-bottom-color:#cecfea; }
+table tbody tr.odd td { background:#f3f3f8; }
+table tbody tr.even td { background:#ffffff; }
+
+/* Various Drupal elements - colors */
+.block-region { background:transparent; border-color:#cecfea; }
+
+/* Highlighted - fonts & colors */
+
+#idRegionHighlightLeft { border-color:#c5c6e0;  }
+#idRegionHighlightLeft h2 { color:#494949; background:#c5c6e0; }
+body.plain #idRegionHighlightLeft h2 { color:#494949; background:transparent; }
+body.bigBorders #idRegionHighlightLeft  h2 { color:#494949; background:transparent;  }
+
+#idRegionHighlightRight { border-color:#c5c6e0;  }
+#idRegionHighlightRight h2 { color:#494949; background:#c5c6e0; }
+body.plain #idRegionHighlightRight h2 { color:#494949; background:transparent; }
+body.bigBorders #idRegionHighlightRight h2 { color:#494949; background:transparent; }
+
+/* Category - fonts & colors */
+
+.category h2 {  }
+
+body.plain #idRegionCategory1 h2, body.plain #idRegionCategory2 h2, body.plain #idRegionCategory3 h2, body.plain #idRegionCategory4 h2, body.plain #idRegionCategory5 h2, body.plain #idRegionCategory6 h2, body.plain #idRegionCategory7 h2, body.plain #idRegionCategory8 h2 {
+  color:#898989; background:transparent;
+}
+
+body.bigBorders #idRegionCategory1 h2, body.bigBorders #idRegionCategory2 h2, body.bigBorders #idRegionCategory3 h2, body.bigBorders #idRegionCategory4 h2, body.bigBorders #idRegionCategory5 h2, body.bigBorders #idRegionCategory6 h2, body.bigBorders #idRegionCategory7 h2, body.bigBorders #idRegionCategory8 h2 {
+  color:#898989; background:transparent;
+}
+
+#idRegionCategory1, #idRegionCategory2, #idRegionCategory3, #idRegionCategory4, #idRegionCategory5, #idRegionCategory6, #idRegionCategory7, #idRegionCategory8 {
+  background-color:#ffffff; border-color:#e5e6f0;
+}
+
+#idRegionCategory1 h2, #idRegionCategory2 h2, #idRegionCategory3 h2, #idRegionCategory4 h2, #idRegionCategory5 h2, #idRegionCategory6 h2, #idRegionCategory7 h2, #idRegionCategory8 h2 {
+  color:#898989; background-color:#e5e6f0;
+}
+
+/* Footer - colors */
+
+#idRegionFooter { background-color:#ffffff; border-color:#f3f3f8; }
+
+/* Sidebar - fonts & colors */
+
+.sidebar-block h2 {  }
+
+body.plain #idRegionSidebarBox1 h2, body.plain #idRegionSidebarBox2 h2, body.plain #idRegionSidebarBox3 h2, body.plain #idRegionSidebarBox4 h2, body.plain #idRegionSidebarBox5 h2, body.plain #idRegionSidebarBox6 h2 {
+  color:#494949; background:transparent;
+}
+
+body.bigBorders #idRegionSidebarBox1 h2, body.bigBorders #idRegionSidebarBox2 h2, body.bigBorders #idRegionSidebarBox3 h2, body.bigBorders #idRegionSidebarBox4 h2, body.bigBorders #idRegionSidebarBox5 h2, body.bigBorders #idRegionSidebarBox6 h2 {
+  color:#494949; background:transparent;
+}
+
+#idRegionSidebarBox1, #idRegionSidebarBox2, #idRegionSidebarBox3, #idRegionSidebarBox4, #idRegionSidebarBox5, #idRegionSidebarBox6 {
+  background-color:#e5e6f0; border-color:#c5c6e0;
+}
+
+#idRegionSidebarBox1 h2, #idRegionSidebarBox2 h2, #idRegionSidebarBox3 h2, #idRegionSidebarBox4 h2, #idRegionSidebarBox5 h2, #idRegionSidebarBox6 h2 {
+  color:#494949; background-color:#c5c6e0;
+}

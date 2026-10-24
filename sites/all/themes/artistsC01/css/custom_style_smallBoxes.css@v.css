@@ -1,0 +1,35 @@
+/*
+ * Highlighted 
+ */
+
+body.smallBoxes .highlighted h2 
+{
+  padding:0 0 0 4px;
+}
+
+/*
+ * Category 
+ */
+
+body.smallBoxes .category { border:0; }
+
+body.smallBoxes .category h2
+{  
+  width:auto;
+  padding:0 0 0 4px;
+  margin:-1px 0 0 -4px;
+}
+
+body.smallBoxes div.category-pair {
+	margin-bottom:10px; 
+}
+
+/* 
+ * Sidebar 
+ */
+
+body.smallBoxes .sidebar-block h2
+{
+  padding:0 0 0 4px;
+  margin-left:-4px;
+}

@@ -1,0 +1,589 @@
+/* Blueprint Compressed Version */
+
+/* reset.css */
+html,body,div,span,applet,object,iframe, h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code, del,dfn,em,font,img,ins,kbd,q,s,samp, small,strike,strong,sub,sup,tt,var, dl,dt,dd,ol,ul,li, fieldset,form,label,legend, table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+body{line-height:1;color:#333;background:white;}
+table{border-collapse:separate;border-spacing:0;}
+caption,th,td{text-align:left;font-weight:normal;}
+blockquote:before,blockquote:after,q:before,q:after{content:"";}
+blockquote,q{quotes:"" "";}
+
+/* typograpghy.css */
+body{font-family:"Lucida Grande",Helvetica,Arial,Verdana,sans-serif;line-height:1.5;}
+body{font-size:75%;}
+html > body{font-size:12px;}
+h1,h2,h3,h4,h5,h6{font-family:Helvetica,Arial,"Lucida Grande",Verdana,sans-serif;color:#111;clear:both;}
+h1{font-size:3em;}
+h2{font-size:2em;}
+h3{font-size:1.5em;line-height:2;}
+h4{font-size:1.2em;line-height:1.25;font-weight:bold;}
+h5{font-size:1em;font-weight:bold;}
+h6{font-size:1em;}
+p{margin:0 0 1.5em 0;text-align:justify;}
+p.last{margin-bottom:0;}
+p img{float:left;margin:1.5em 1.5em 1.5em 0;padding:0;}
+p img.top{margin-top:0;}
+ul,ol{margin:0 0 1.5em 1.5em;}
+ol{list-style-type:decimal;}
+dl{margin:1.5em 0;}
+dl dt{font-weight:bold;}
+a{color:#125AA7;text-decoration:underline;outline:none;}
+a:hover{color:#000;}
+blockquote{margin:1.5em 0 1.5em 1.5em;color:#666;font-style:italic;}
+strong{font-weight:bold;}
+em{font-style:italic;}
+pre{margin-bottom:1.3em;background:#eee;border:0.1em solid #ddd;padding:1.5em;}
+code{font:0.9em Monaco,monospace;}
+hr{background:#B2CCFF;color:#B2CCFF;clear:both;float:none;width:100%;height:0.1em;margin:0 0 1.4em 0;border:none;}
+* html hr{margin:0 0 1.2em 0;}
+table{margin-bottom:1.4em;border-top:0.1em solid #ddd;border-left:0.1em solid #ddd;}
+th,td{height:1em;padding:0.2em 0.4em;border-bottom:0.1em solid #ddd;border-right:0.1em solid #ddd;}
+th{font-weight:bold;}
+label{font-weight:bold;}
+textarea{height:180px;width:300px;}
+p.small{font-size:0.8em;margin-bottom:1.875em;line-height:1.875em;}
+p.large{font-size:1.2em;line-height:2.5em;}
+p.quiet{color:#666;}
+.hide{display:none;}
+.alt{color:#666;font-family:"Warnock Pro","Goudy Old Style","Palatino","Book Antiqua",serif;font-size:1.2em;line-height:1%;font-style:italic;}
+.dquo{margin-left:-.7em;}
+p.incr,.incr p{font-size:0.83333em;line-height:1.44em;margin-bottom:1.8em;}
+
+/*
+ * Additional reset
+ */
+
+a { text-decoration:none; }
+p, li, label, dl, dt, td, th, a, div.content { font-size:small; }
+hr { visibility:hidden; }
+
+/*
+ * Main Layout
+ */
+
+body { margin:0 0 21px 0; }
+
+#idOuter {
+  display:block;
+  width:auto;
+  margin:auto;
+}
+
+#idSegmentUpper, #idSegmentLower {
+  display:block;
+  width:auto;
+  height:auto;
+  margin:auto;
+  position:static;
+  overflow:visible;
+}
+
+#idSegmentUpper { border-bottom:solid 7px; }
+
+#idHeader { margin-bottom:0; }
+
+.horizonal-spacer {
+  display:block;
+  line-height:10px;
+  width:100%;
+  clear:both;
+  float:left;
+}
+
+table.layout, table.layout thead tr th, table.layout tbody tr td {
+  border:0;
+  border-collapse:collapse;
+  width:auto;
+  height:auto;
+  table-layout:auto;
+  margin:0;
+  padding:0;
+}
+
+.align-top { vertical-align:top; }
+.align-bottom { vertical-align:bottom; }
+
+/* CONFIG */
+table.layout.site-header {
+  margin:10px 0 0px 0;   /* this controls relative header position to browser frame and lower segment - negative margine-bottom moves lower segment up */
+}
+
+/* makes elements positioned - can act as anchor for absolute boxes */
+.positioned-marker { position:relative; }
+
+/*
+ * General Layout 
+ * Absolute widths
+ */
+
+.container{ text-align:left; position:relative; padding:0; margin:0 auto; width:956px; }
+
+div.first-row#idCenter { margin-top:10px; }
+
+.column{ float:left; margin:0 10px 0 0; padding:0; }
+
+.first { margin-left:0; }
+.last { margin-right:0; }
+
+.offset-left { margin-left:10px; }
+.offset-right { margin-right:10px; }
+.offset-bottom { margin-bottom:10px; }
+
+.region { margin-bottom:21px; }
+
+.span-sidebar-normal { width:210px; }
+.span-main-content { width:736px; }
+.span-main-content-padded { width:728px; padding-left:4px; padding-right:4px; }
+.span-main-content-half { width:363px; }
+.span-main-content-half-padded { width:355px; padding-left:4px; padding-right:4px; }
+.span-main-content-third { width:242px; }
+.span-main-content-two-thirds { width:484px; }
+
+.span-100p { width:100%; }
+.span-full { width:956px; } /* .span-main-content + .span-sidebar-normal + .offset-left */
+
+.sidebar-block h2 { width:206px; } /* .span-sidebar-normal - 4px padding */
+
+#idSegmentUpper, #idSegmentLower { min-width:976px; } /* .span-full + 20px to allow margins for misplaced headings of category regions */
+
+/*
+ * Breadcrumb
+ */
+
+.breadcrumb {
+  width:100%;
+  clear:both;
+  float:left;
+  min-height:21px;
+  margin:10px 0 0 0;
+  padding:0;
+}
+
+.breadcrumb a {
+  margin:0;
+  padding:0;
+  text-align:left;
+}
+
+.breadcrumb-first { margin: 0 0 0 0; } /* needed to align bredcrumbs with the page left border */
+
+/*
+ * Primary & secondary links 
+ */
+
+#idPrimaryLinks, #idSecondaryLinks { display:block; }
+
+ul.primary-links, ul.secondary-links {
+  text-align:center;
+  margin:0;
+  padding:0; 
+}
+
+ul.primary-links { }
+ul.secondary-links { margin-top:0; } /* HAVE to be positive, because IE7 gets confused by negative margin */
+
+/* IE fix - setting display to inline-block sets hasLayout to true and than we reset it back, while hasLayout stays true 
+   This fixes bug with resizing in IE.*/
+ul.primary-links li, ul.secondary-links li, ul.suckerfish-primary li {
+  display:inline-block;
+  padding:0;
+  margin:0;
+}
+ul.primary-links li, ul.secondary-links li, ul.suckerfish-primary li { display:inline; }
+
+#idPrimaryLinks ul li a, #idSecondaryLinks ul li a {
+  display: inline;
+  margin: 0 0 0 0;
+  padding:0.35em 0.75em;
+}
+
+/*
+ * Suckerfish
+ */
+
+#idSuckerfish {
+  display:block;
+}
+
+#idSuckerfish ul {
+  min-height:1.4em; /* has to be set as min-height, since IE */
+}
+
+ul.suckerfish-primary {
+  text-align:left;
+  margin:0 0 0 -0.3em;
+  padding:0;
+}
+
+ul.suckerfish-primary li {
+  display:block;
+  float:left;
+  position:relative;
+  list-style-type:none;
+  list-style-image:none;
+}
+
+ul.suckerfish-primary li a {
+  display:block;
+  float:left;
+  position:relative;
+  text-decoration:none;
+  border-bottom:solid 1px transparent; /* Opera li/a size fix, color needs to be something instead of transparent for IE6 */
+}
+
+ul.suckerfish-primary li a {
+  margin:0 1em 0 0;
+  padding:1px 0.3em 1px 0.3em;
+}
+
+ul.suckerfish-primary li:hover a, ul.suckerfish-primary li.submenu a:hover, ul.suckerfish-primary li.submenu a:hover a {
+  border-bottom:0; /* Opera li/a size fix */
+  margin-bottom:1px; /* compensate for border-bottom Opera fix */
+}
+
+ul.suckerfish-primary li div.suckerfish-secondary-wrapper {
+  visibility:hidden;
+  overflow:hidden;
+  position:absolute; top:1.2em; left:-0.3em;
+  padding:0;
+  margin:0.4em 0.3em;
+  /*border-top:solid 6px;*/ /* 7px border #idSuckerfish - 1px a (Opera fix) border */
+  border-top:dotted 1px; border-right:solid 1px; border-bottom:solid 7px; border-left:solid 1px;
+  width:12em;
+  background:#ffffff; /* default is transparent, needs it set to anything*/
+}
+
+ul.suckerfish-primary li table {
+  margin:-1px;
+  border:0;
+  border-collapse: collapse;
+}
+
+ul.suckerfish-primary li table th, ul.suckerfish-primary li table td {
+  border:0;
+}
+
+ul.suckerfish-primary li:hover div.suckerfish-secondary-wrapper, ul.suckerfish-primary li a:hover div.suckerfish-secondary-wrapper {
+  visibility:visible;
+}
+
+div.suckerfish-secondary-wrapper li { padding-left:0.3em; }
+
+div.suckerfish-secondary-wrapper li, div.suckerfish-secondary-wrapper li a {
+  display:block;
+  width:12em;
+}
+
+/* 
+ * Help 
+ */
+
+/* 
+ * Menus 
+ */
+
+ul.menu li a { text-align:right; }
+
+/* 
+ * Admin panel 
+ */
+
+dl.admin-list dt { margin-top:1em; }
+
+/* blocks configuration (admin/build/block) */
+
+table#blocks td.region { }
+
+/*
+ * Messages
+ */
+
+.messages {
+  border:dotted 1px;
+  display:block;
+  margin:20px 30px 20px 20px;
+  padding:10px;
+  text-align:center;
+}
+
+/*
+ * Mission
+ */
+
+#mission {
+  border:dotted 1px;
+  padding:1em;
+  margin-bottom:27px;
+}
+
+/*
+ * Forum
+ */
+
+#forum table { border:0; }
+
+#forum table th { 
+  background-color:transparent; /* override color settings for general tables */
+}
+
+#forum td.container .name { padding: 4px 6px 4px 6px; }
+#forum td.container .name a { }
+
+#forum td.container .description { }
+
+#forum td.topics, #forum td.posts { text-align:center; }
+
+/* 
+ * Node 
+ */
+
+div.picture {
+  float: right;
+  clear: right;
+  height:100%;
+}
+
+div.picture img {
+  margin-bottom:5px; margin-left:5px;
+}
+
+div.node { margin-bottom:27px; }
+
+h2, div.node h2 {
+  padding-top:0.5em;
+  clear:none;
+}
+div.node h2 a { vertical-align:bottom; }
+
+div.node span.submitted { vertical-align:top; }
+div.node span.submitted a { vertical-align:top; }
+
+div.node div.content { margin-bottom:0.5em; }
+div.node div.content p { margin-bottom:0.5em; }
+
+div.node div.links { border-top:dotted 1px; }
+
+/*
+ * Book
+ */
+
+div.book-navigation div.page-links { border-top:dotted 1px; border-bottom:0; }
+
+/* 
+ * Comments 
+ */
+
+div.comment { margin-bottom:1em; }
+
+.comment .comment-header, .comment .comment-footer {
+  display:block;
+  overflow:auto;
+  width:auto;
+}
+
+div.comment div.comment-header span.title {
+  display:block;
+  line-height:1.2em;
+  overflow:visible;
+  float:left;
+  width:auto;
+  bottom:0;
+}
+
+div.comment span.submitted {
+  display:block;
+  float:none;
+}
+
+div.comment .clear-block { border:0; }
+
+div.comment .links {
+  display:inline-block;
+  line-height:1em;
+  overflow:visible;
+  float:left;
+  margin:0;
+}
+
+div.comment div.content { margin-bottom:0.5em; }
+div.comment div.content p { margin-bottom:0.5em; }
+
+.comment .comment-footer {
+  border-top:dotted 1px;
+}
+
+textarea#edit-comment { width:100%; }
+
+/* 
+ * Tabs 
+ */
+
+/* there's two classes of tabs - primary & secondary - look admin/build/themes/settings for example
+   primary are rendered as tabs, secondary as horizontal link list
+ */
+#tabs-wrapper .tabs.primary { border-bottom:solid 7px; }
+
+#tabs-wrapper h2.with-tabs { margin-bottom:0; }
+
+#tabs-wrapper .tabs {
+  display:block; 
+  margin:0 0 1px 0; 
+  padding:0;
+  text-align:left;
+  border:0;
+}
+
+/* IE fix - setting display to inline-block sets hasLayout to true and than we reset it back, while hasLayout stays true 
+   This fixes bug with resizing in IE.
+*/
+#tabs-wrapper .tabs li {
+  display:inline-block;
+  padding:0;
+  margin:0 0.5em 0 0;
+  border:0;
+}
+#tabs-wrapper .tabs li { display: inline; }
+
+#tabs-wrapper .tabs.primary li.active {
+  border-bottom:solid 5px;
+  margin-bottom:-10px;
+}
+
+#tabs-wrapper .tabs li a {
+  border:0;
+  margin:0;
+  padding:0 0.75em;
+}
+
+#tabs-wrapper .tabs.secondary li a.active { font-weight:bold; }
+
+/* 
+ * Search box 
+ */
+
+/* Cancel padding for search box - to make it in line with heading */
+/*.highlighted #search-block-form,.sidebar-block #search-block-form { margin-left:-4px; }
+*/
+
+#search-block-form label  { display: none; }
+#search-block-form input.form-text { border:solid 1px; }
+
+/*
+ * General Tables
+ */
+ 
+table thead tr th, table tbody tr, table tbody tr td {
+  border:0;
+  padding-left:2px; padding-right:2px;
+} 
+
+table {
+  margin-top:1em;
+  border-top:solid 2px;
+  border-bottom:solid 2px;
+  border-left:0;
+  border-right:0;
+}
+
+table thead tr th {
+  margin-top:1em;
+  border-bottom:solid 1px;
+}
+
+table tbody tr td { border-bottom:dotted 1px; }
+
+/*
+ * Various Drupal elements
+ */
+
+.block-region {
+  display:block;
+  border:2px dashed;
+  margin:0;
+  padding-top:1em;
+  padding-bottom:1em;
+  text-align:center;
+}
+
+/*
+ * Center
+ */
+
+#idCenter 
+{
+   margin:0 10px 0 0; 
+}
+
+/*
+ * Highlighted 
+ */
+
+.highlighted {
+  padding-bottom:0;
+}
+
+.highlighted .content {
+  padding-left:4px;
+  padding-right:4px;
+}
+
+.highlighted h2 { padding:15px 0 0 4px; }
+
+/* 
+ * Main Content 
+ */
+
+div.main-content {
+  border:0;	
+	padding-bottom:21px;
+}
+
+/*
+ * Category 
+ */
+
+div.categories { }
+
+div.category {
+  padding-bottom:4px;
+	margin-bottom:0;
+}
+
+div.category h2 {
+  width:240px;
+  padding:15px 0 0 4px;
+  margin:-11px 0 0 -11px;
+}
+
+div.category-pair {	margin-bottom:17px; } /* 10px standard + 7px to compensate for h2 displacement */
+
+/*
+ * Footer 
+ */
+
+#idRegionFooter {
+    border-top:dashed 1px;
+    border-bottom:dashed 1px;
+    margin:21px 0 21px 0;
+    padding: 1em 0 1em 0;
+}
+
+div.footer p {
+    margin:0;
+    text-align:center;
+}
+
+/* 
+ * Sidebar 
+ */
+
+.sidebar-block {
+	border:0;
+	padding:0 4px 4px 4px;
+	margin-bottom:10px;
+}
+
+.sidebar-block h2 {
+  padding:15px 0 0 4px;
+  margin-left:-4px;
+}

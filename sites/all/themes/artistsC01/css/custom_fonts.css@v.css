@@ -1,0 +1,141 @@
+/* TODO
+*/
+
+/* 
+ * Base fonts
+ */
+
+html > body{font-size:15px;}  /*CONFIG*/
+ 
+body { font-family:Tahoma,Verdana,Helvetica,Arial,sans-serif; }
+
+html body a {  }
+html body a:hover {  }
+
+h1,h2,h3,h4,h5,h6 {  }
+h2 { font-size:large; }
+h3 { font-size:medium; }
+
+/* Header */
+#idSiteName, #idSiteName a { font-family:Georgia,"Times New Roman",Times,serif; font-size:35px; }
+
+#idSiteSlogan { font-family:Tahoma,Verdana,Helvetica,Arial,sans-serif; font-size:18px; }
+
+/* Breadcrumb - fonts*/
+
+.breadcrumb { font-size:small; font-weight:normal; }
+.breadcrumb a {
+  font-weight:normal;
+  text-decoration:none;
+}
+
+/* Primary and secondary links - fonts*/
+
+#idPrimaryLinks, #idSecondaryLinks {}
+
+ul.primary-links li a, ul.primary-links li a:link, ul.primary-links li a:visited, ul.secondary-links li a, ul.secondary-links li a:link, ul.secondary-links li a:visited {
+  font-family: Verdana,Helvetica,sans-serif; font-size:small; font-weight:normal;
+  text-decoration:none;
+}
+
+ul.primary-links {  }
+ul.primary-links li a.active, ul.secondary-links li a.active { font-weight:bold; }
+
+/* Help - fonts*/
+
+div.help p { font-size:small; }
+
+/* 
+ * Menus 
+ */
+
+/* Menus - fonts*/
+
+ul.menu li a {
+/*  font-weight:bold; font-size:small;*/
+  text-decoration:none;
+}
+
+/* Admin panel - fonts*/
+
+div.admin div.admin-panel h3 { font-family:Tahoma,Verdana,Helvetica,Arial,sans-serif; }
+div.admin div.admin-panel p.description { font-size:small; }
+
+dl.admin-list dt {  }
+dl.admin-list dt a {
+  font-size:small;
+  text-decoration:none;
+}
+dl.admin-list dd { font-size:small; }
+
+table#blocks td.region {  }
+
+/* Message - fonts*/
+.messages { font-size:small; }
+
+/* Mission */
+#mission {  }
+
+/* Node - fonts*/
+
+h2, div.node h2, div.node h2 a, h2.with-tabs, h2.with-tabs a {
+  font-family:Georgia,"Times New Roman",Times,serif; font-size:24px; 
+}
+div.node h2 a { }
+
+div.node span.submitted { font-size:x-small; }
+div.node span.submitted a { font-size:x-small; }
+
+div.node div.links {  }
+
+/* Comments - fonts*/
+
+div.comment {  }
+
+div.comment div.comment-header span.new {
+  font-size:x-small; font-weight:bold;
+  text-transform:uppercase;
+}
+
+div.comment span.submitted { font-size:x-small; }
+div.comment span.submitted a { font-size:x-small; }
+
+/* Tabs - fonts*/
+
+#tabs-wrapper {  }
+
+#tabs-wrapper .tabs li {  }
+#tabs-wrapper .tabs li.active {  }
+
+#tabs-wrapper .tabs li a {  }
+
+/* Search box - fonts & colors */
+
+#search-block-form input.form-text {  }
+
+/* Tables - fonts*/
+
+table {  }
+table thead tr th {  }
+table tbody tr td {  }
+
+/* Various Drupal elements - fonts*/
+.block-region { font-size:1.3em; }
+
+/* Highlighted - fonts & colors */
+
+.highlighted h2 { font-family:Verdana,sans-serif; font-weight:normal; }
+
+/* Category - fonts & colors */
+
+/*.category { background-color:#f0fff0; border-color:#d0ffd0; }*/
+
+.category h2 { font-family:Verdana,sans-serif; font-weight:normal; }
+
+/* Footer - fonts*/
+
+#idRegionFooter {  }
+
+/* Sidebar - fonts & colors */
+
+.sidebar-block h2 { font-family:Verdana,sans-serif; font-weight:normal; }
